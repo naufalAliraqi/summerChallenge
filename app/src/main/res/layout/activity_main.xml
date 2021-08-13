@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    app:layoutDescription="@xml/activity_main_scene">
+
+    <ImageView
+        android:id="@+id/sahra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/sahra" />
+
+    <ImageView
+        android:id="@+id/beach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/beach" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/sun"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/sunny" />
+
+    <TextView
+        android:id="@+id/summer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The summer is very hot"
+        android:gravity="center_horizontal"
+        android:textSize="32sp"
+        android:textColor="#ff0044"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/summercool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="The summer is 'COOL' now"
+        android:textColor="#0B810F"
+        android:textSize="32sp"></TextView>
+
+    <TextView
+        android:id="@+id/cool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To make it 'COOL'"
+        android:gravity="center_horizontal"
+        android:textSize="32sp"
+        android:textColor="#ff0044"></TextView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/swipe"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/swipe" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/thermometer"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/thermometer" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/juice"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/juice" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/buddy"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/buddy" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

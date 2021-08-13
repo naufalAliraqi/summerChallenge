@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:id="@+id/sahra"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="1"/>
+
+        <Constraint
+            android:id="@+id/beach"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"/>
+
+        <Constraint
+            android:id="@+id/sun"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_margin="12dp"
+            android:alpha="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Constraint
+            android:id="@+id/summer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="128dp"
+            android:alpha="1"
+            app:layout_constraintBottom_toTopOf="@+id/thermometer"
+            app:layout_constraintTop_toBottomOf="@+id/sun"/>
+
+        <Constraint
+            android:id="@+id/summercool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:layout_marginTop="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/thermometer"
+            app:layout_constraintTop_toBottomOf="@+id/sun"/>
+
+        <Constraint
+            android:id="@+id/cool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:gravity="center_horizontal"
+            android:text="To make it 'COOL'"
+            android:textColor="#ff0044"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/thermometer"
+            app:layout_constraintTop_toBottomOf="@+id/swipe"></Constraint>
+
+        <Constraint
+            android:id="@+id/swipe"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp"
+            android:alpha="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/summer"/>
+
+        <Constraint
+            android:id="@+id/thermometer"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="32dp"
+            android:alpha="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Constraint
+            android:id="@+id/juice"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_margin="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:alpha="0"/>
+
+        <Constraint
+            android:id="@+id/buddy"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_margin="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:alpha="0"/>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:id="@+id/sahra"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"/>
+
+        <Constraint
+            android:id="@+id/beach"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="1"/>
+
+        <Constraint
+            android:id="@+id/sun"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:alpha="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Constraint
+            android:id="@+id/summer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="128dp"
+            android:alpha="0"
+            app:layout_constraintBottom_toTopOf="@+id/thermometer"
+            app:layout_constraintTop_toBottomOf="@+id/sun"/>
+
+        <Constraint
+            android:id="@+id/summercool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:layout_marginTop="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/thermometer"
+            app:layout_constraintTop_toBottomOf="@+id/sun"/>
+
+        <Constraint
+        android:id="@+id/cool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:gravity="center_horizontal"
+        android:text="To make it 'COOL'"
+        android:textColor="#ff0044"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/thermometer"
+        app:layout_constraintTop_toBottomOf="@+id/swipe"></Constraint>
+
+        <Constraint
+            android:id="@+id/swipe"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp"
+            android:alpha="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/summer"/>
+
+        <Constraint
+            android:id="@+id/thermometer"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="32dp"
+            android:alpha="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Constraint
+            android:id="@+id/juice"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_margin="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:alpha="1"/>
+
+        <Constraint
+            android:id="@+id/buddy"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_margin="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:alpha="1"/>
+
+    </ConstraintSet>
+
+    <Transition
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@+id/start">
+        <OnSwipe
+            app:dragDirection="dragRight"
+            app:touchAnchorId="@+id/sun"
+            />
+    </Transition>
+</MotionScene>
